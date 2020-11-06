@@ -1,3 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root {
+    --Dark-Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
 body {
-    background-color: grey;
+    background-color: rgb(67, 67, 15);
+    font-family: 'spartan', sans-serif;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    margin-top: 3.5rem;
+}
+p {
+    color: var(--Dark-Gray);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 3.5rem;
+}
+
+a {
+    color: var(--Black);
+    font-family: 'spartan', sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-decoration: none;
+    /* margin-top: 3rem; */
+}
+
+header {
+    z-index: 10;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex div {
+    padding: 20px 0;
+   z-index: 20;
+}
+
+ .flex .hamburger {
+    /* display: none; */
+    margin-left: -140px;
+    z-index: 50;
+}
+
+.flex .close{
+    display: none;
+    z-index: 20;
+}
+.flex .logo {
+    /* display: none; */
+    z-index: 20;
+} 
+.flex nav  {
+   
+    z-index: 20;
+     display: none;
+}
+
+.flex ul {
+    display: flex;
+    justify-content: space-between;
+   list-style-type: none; 
+}
+
+.flex ul li {
+    margin-left: 15px;
+}
+
+
+.slides .direction-container {
+    display: flex;
+    justify-content: flex-end;
+     margin-top: -58px;
+   
+}
+
+.slides .direction-container .left {
+    background-color: var(--Black);
+    padding: 15px 25px;
+}
+
+.slides .direction-container .right {
+    background-color: var(--Black);
+    padding: 15px 25px;
+} 
+
+.slides .allSlide {
+    padding-left: 3rem;
+    padding-right: 3rem;
+} 
+
+.one  {
+    display: none;
+   margin-top: -70px;
+}
+
+.two {
+    /* display: none; */
+    margin-top: -70px;
+} 
+.three {
+    display: none;
+    margin-top: -70px;
+}   
+
+.four {
+    padding-top: 5rem;
+}
+
+.five .allSlide h1 {
+    font-size: 12px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
 }
