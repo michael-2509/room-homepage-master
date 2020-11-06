@@ -13,12 +13,13 @@
 body {
     background-color: rgb(67, 67, 15);
     font-family: 'spartan', sans-serif;
-    width: 100%;
+    
 }
 
 h1 {
     font-weight: 700;
     margin-top: 3.5rem;
+  
 }
 p {
     color: var(--Dark-Gray);
@@ -26,6 +27,7 @@ p {
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 3.5rem;
+ 
 }
 
 a {
@@ -81,7 +83,9 @@ header {
     margin-left: 15px;
 }
 
-
+/* .slides{
+    width: 100%;
+} */
 .slides .direction-container {
     display: flex;
     justify-content: flex-end;
