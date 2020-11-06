@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(67, 67, 15);
+    /* background-color: rgb(67, 67, 15); */
     font-family: 'spartan', sans-serif;
     
 }
@@ -109,12 +109,12 @@ header {
 } 
 
 .one  {
-    display: none;
+    /* display: none; */
    margin-top: -70px;
 }
 
 .two {
-    /* display: none; */
+    display: none;
     margin-top: -70px;
 } 
 .three {
