@@ -59,18 +59,35 @@ header {
     z-index: 50;
 }
 
-.flex .close{
+.flex .hamburger.appear {
+    display: none;
+}
+
+.flex .cancel{
     display: none;
     z-index: 20;
+}
+
+.flex .cancel.appear{
+    display: flex;
 }
 .flex .logo {
     /* display: none; */
     z-index: 20;
 } 
-.flex nav  {
-   
-    z-index: 20;
-     display: none;
+
+.flex .logo.appear {
+        display: none;
+}
+
+.flex .navs  {
+    display: none;
+    font-weight: 700;
+    z-index: 20;  
+}
+
+.flex .navs.appear {
+    display: flex;
 }
 
 .flex ul {
@@ -80,6 +97,8 @@ header {
 }
 
 .flex ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 15px;
 }
 
@@ -114,6 +133,7 @@ header {
    margin-top: -70px;
 }
 
+
 .two {
     display: none;
     margin-top: -70px;
@@ -122,6 +142,10 @@ header {
     display: none;
     margin-top: -70px;
 }   
+
+.one.appear, .two.appear, .three.appear{
+    margin-top: 0px;
+}
 
 .four {
     padding-top: 5rem;
