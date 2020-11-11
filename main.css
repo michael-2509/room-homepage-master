@@ -13,6 +13,8 @@
 body {
     /* background-color: rgb(67, 67, 15); */
     font-family: 'spartan', sans-serif;
+    margin: 0;
+   width: 100vw;
     
 }
 
@@ -30,14 +32,6 @@ p {
  
 }
 
-a {
-    color: var(--Black);
-    font-family: 'spartan', sans-serif;
-    font-weight: 500;
-    letter-spacing: 10px;
-    text-decoration: none;
-    /* margin-top: 3rem; */
-}
 
 header {
     z-index: 10;
@@ -102,8 +96,9 @@ header {
     margin-left: 15px;
 }
 
-.slides{
-    width: 100%;
+
+.slides .image-container .desc_image {
+    display: none;
 }
 
 .slides .direction-container {
@@ -128,8 +123,17 @@ header {
     padding-right: 3rem;
 } 
 
+.slides .allSlide a {
+    color: var(--Black);
+    font-family: 'spartan', sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-decoration: none;
+    /* margin-top: 3rem; */
+}
+
+
 .one  {
-    /* display: none; */
    margin-top: -70px;
 }
 
@@ -149,10 +153,145 @@ header {
 
 .four {
     padding-top: 5rem;
+  
 }
 
-.five .allSlide h1 {
+.about_furniture .allSlide h1 {
     font-size: 12px;
     letter-spacing: 6px;
     text-transform: uppercase;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.about_furniture .allSlide p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+
+@media screen and (min-width:760px){
+    body {
+        /* background-color: yellow; */
+        max-width: 100%;
+    
+    }
+
+    .flex {
+        justify-content: flex-start ;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+
+    .flex .hamburger {
+        display: none;
+    }
+
+    .flex .navs {
+        display: flex;
+        color: var(--White);
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .flex .navs ul li {
+        cursor: pointer;
+    }
+
+   .slides .row {
+       display: flex;
+       align-items: center;
+       margin-top: -123px;
+   }
+
+   .slides .allSlide {
+       padding: 0;
+       margin: 0 auto;
+       margin-left: -2.5rem;
+       margin-right:3rem ;
+   }   
+
+    .slides .image-container .mob_image {
+        display: none;
+    }
+
+    .slides .image-container .desc_image {
+        display: flex;
+        width: 819px;
+    }
+
+    .slides .direction-container {
+        margin-top: 465px;
+        cursor: pointer;
+    }
+
+    .slides .direction-container .left:hover {
+        background-color: var(--Dark-Gray);
+    }
+
+    
+    .slides .direction-container .right:hover {
+        background-color: var(--Dark-Gray);
+    }
+
+
+
+    .slides .allSlide h1 {
+        font-size: 2rem;
+    }
+
+    .slides .allSlide p {
+        font-size: 0.9rem;
+    }
+
+    
+.slides .allSlide a:hover {
+   color: var(--Dark-Gray);
+}
+
+    
+.slides .allSlide a img:hover {
+    color: var(--Dark-Gray);
+ }
+
+    .two {
+        display: none;
+    }
+
+    .three{
+        display: none;
+    }
+
+    
+
+
+
+    .about_furniture {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .about_furniture .fur_image {
+        width: 30%;
+    }
+
+    .about_furniture .allSlide {
+        margin: 3rem 1.5rem;
+    }
+    .about_furniture .allSlide h1 {
+        margin-top: 0; 
+        padding: 0;
+
+    }
+   
+    .about_furniture .allSlide p {
+        padding: 0;
+    }
+
+
+   .four {
+       padding-top: 0;
+       
+   }
 }
