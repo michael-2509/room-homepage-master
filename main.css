@@ -14,8 +14,8 @@ body {
     /* background-color: rgb(67, 67, 15); */
     font-family: 'spartan', sans-serif;
     margin: 0;
-   width: 100vw;
-    
+   /* width: 100vw; */
+    max-width: 100%;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 p {
     color: var(--Dark-Gray);
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 3.5rem;
@@ -96,6 +96,10 @@ header {
     margin-left: 15px;
 }
 
+.slides .image-container .mob_image {
+    width: 440px;
+}
+
 
 .slides .image-container .desc_image {
     display: none;
@@ -119,8 +123,8 @@ header {
 } 
 
 .slides .allSlide {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 } 
 
 .slides .allSlide a {
@@ -153,6 +157,7 @@ header {
 
 .four {
     padding-top: 5rem;
+    width: 440px;
   
 }
 
