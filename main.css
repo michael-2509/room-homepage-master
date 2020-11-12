@@ -11,31 +11,28 @@
 }
 
 body {
-    /* background-color: rgb(67, 67, 15); */
     font-family: 'spartan', sans-serif;
     margin: 0;
-   /* width: 100vw; */
-    max-width: 100%;
+    width: 100vw; 
 }
 
 h1 {
     font-weight: 700;
     margin-top: 3.5rem;
-  
 }
+
 p {
     color: var(--Dark-Gray);
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 3.5rem;
- 
 }
-
 
 header {
     z-index: 10;
 }
+
 .flex {
     display: flex;
     align-items: center;
@@ -44,11 +41,10 @@ header {
 
 .flex div {
     padding: 20px 0;
-   z-index: 20;
+    z-index: 20;
 }
 
  .flex .hamburger {
-    /* display: none; */
     margin-left: -140px;
     z-index: 50;
 }
@@ -65,8 +61,8 @@ header {
 .flex .cancel.appear{
     display: flex;
 }
+
 .flex .logo {
-    /* display: none; */
     z-index: 20;
 } 
 
@@ -97,7 +93,7 @@ header {
 }
 
 .slides .image-container .mob_image {
-    width: 440px;
+    width: 100%;
 }
 
 
@@ -133,14 +129,11 @@ header {
     font-weight: 500;
     letter-spacing: 10px;
     text-decoration: none;
-    /* margin-top: 3rem; */
 }
-
 
 .one  {
    margin-top: -70px;
 }
-
 
 .two {
     display: none;
@@ -157,9 +150,9 @@ header {
 
 .four {
     padding-top: 5rem;
-    width: 440px;
-  
+    width: 100%;
 }
+
 
 .about_furniture .allSlide h1 {
     font-size: 12px;
@@ -172,15 +165,17 @@ header {
 .about_furniture .allSlide p {
     padding-left: 3rem;
     padding-right: 3rem;
+}                                                                
+
+
+.six {
+    width:100%;
 }
-
-
 
 @media screen and (min-width:760px){
     body {
         /* background-color: yellow; */
         max-width: 100%;
-    
     }
 
     .flex {
